@@ -113,7 +113,6 @@ Style guide: Tables.2 Calendar table variant
     display: block;
     width: 100%;
     padding: $small-spacing $base-spacing;
-    text-transform: uppercase;
     color: $aqua;
 
     @include media($mobile) {

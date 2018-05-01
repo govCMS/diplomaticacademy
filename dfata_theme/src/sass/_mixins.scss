@@ -138,7 +138,6 @@
 @mixin listing-component-subtext() {
   font-size: rem(14px);
   color: $neutral_2;
-  text-transform: uppercase;
   margin-top: $default_padding;
   margin-bottom: $default_padding;
 }

@@ -36,7 +36,7 @@
           <?php
             $logo_img = theme_image(array(
               'path' => $gov_logo,
-              'alt' => 'Home',
+              'alt' => 'Australian Government Department of Foreign Affairs and Trade logo',
               'attributes' => array('class' => array('header__logo_gov-image')),
             ));
             print l($logo_img, $front_page, array(
@@ -53,7 +53,7 @@
         <?php if ($logo): ?>
           <?php
             $logo_alt = theme_get_setting('dfata_theme_header_logo_alt');
-            $logo_alt = !empty($logo_alt) ? $logo_alt : variable_get('site_name', 'Home');
+            $logo_alt = !empty($logo_alt) ? $logo_alt : variable_get('site_name', 'Australian Government Department of Foreign Affairs and Trade logo');
             $logo_img = theme_image(array(
               'path' => $logo,
               'alt' => $logo_alt,
@@ -146,7 +146,7 @@
       <?php print $sidebar_second; ?>
     </aside>
   <?php endif; ?>
-  
+
   <div id="footer">
     <?php print render($page['footer']); ?>
   </div>

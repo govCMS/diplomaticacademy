@@ -16,12 +16,6 @@
       .field-name-field-faculty-head {
         display: none;
       }
-      &:hover {
-        .field-name-field-learning-streams,
-        .field-name-field-faculty-head {
-          display: block;
-        }
-      }
       @include breakpoint(tablet) {
         @include span-columns(4 of 12);
       }
