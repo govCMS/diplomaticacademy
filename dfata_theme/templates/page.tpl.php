@@ -13,7 +13,9 @@
   <div class="header__inner">
     <?php if ($secondary_menu): ?>
       <nav class="header__secondary-menu" id="secondary-menu" role="navigation">
-        <?php print theme('links__system_secondary_menu', array(
+        <?php 
+
+        $theme_atts = array(
           'links' => $secondary_menu,
           'attributes' => array(
             'class' => array(
@@ -21,13 +23,29 @@
               'inlineLinks--bordered--double',
               'clearfix',
             ),
-          ),
-          'heading' => array(
-            'text' => isset($secondary_menu_heading) ? $secondary_menu_heading : '',
-            'level' => 'h2',
-            'class' => array('element-invisible'),
-          ),
-        )); ?>
+          )
+        );
+
+        if (isset($secondary_menu_heading)) {
+          $theme_atts = array(
+            'links' => $secondary_menu,
+            'attributes' => array(
+              'class' => array(
+                'links',
+                'inlineLinks--bordered--double',
+                'clearfix',
+              ),
+            ),
+            'heading' => array(
+              'text' => $secondary_menu_heading,
+              'level' => 'h2'
+            ),
+          );
+        }
+        
+        print theme('links__system_secondary_menu', $theme_atts); 
+
+        ?>
       </nav>
     <?php endif; ?>
     <div class="logo-and-search">

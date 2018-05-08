@@ -1,0 +1,19 @@
+#page {
+  a {
+  border-bottom: solid 1px $academy_green !important;
+  text-decoration: none;
+  &:hover {
+    color: $primary_3 !important;
+    background-color: transparent !important;
+  }
+  }
+  #block-views-latest-news-related a {
+    border-bottom: none !important;
+  }
+  .field-name-field-bean-image a {
+    border-bottom: none !important;
+  }
+  h2 a {
+    border-bottom: none !important;
+  }
+}

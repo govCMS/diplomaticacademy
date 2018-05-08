@@ -16,10 +16,11 @@ html {
     .content-header {
       .content-header-inner {
         position: relative;
+        height: 11.25rem;
         @include center-column($desktop_column);
         padding-bottom: rem(25px);
         @include breakpoint(tablet) {
-          height: rem(168px);
+          height: rem(300px);
           padding-top: rem(40px);
           padding-bottom: rem(40px);
         }
@@ -30,11 +31,12 @@ html {
         h1 {
           font-weight: 300;
           font-size: rem(24px);
-          line-height: rem(80px);
+          line-height: rem(32px);
           color: $academy_green;
           margin-bottom: 0;
           @include breakpoint(tablet) {
             font-size: rem(48px);
+            line-height: rem(80px);
             margin-top: 0;
             width: 68%;
           }
@@ -46,7 +48,7 @@ html {
           @include breakpoint(tablet) {
             position: absolute;
             right: 1.25rem;
-            top: 3.5rem;
+            //top: 3.5rem;
           }
         }
       }
@@ -217,9 +219,9 @@ ul, ol, dl, p, dt, dd {
   @include wysiwyg;
 }
 
-a[rel~='external']::after {
-  background-image: ui-kit-icon("external-link--aqua.svg") !important;
-}
+// a[rel~='external']::after {
+//   background-image: ui-kit-icon("external-link--aqua.svg") !important;
+// }
 
 .page-node {
   .region-content {

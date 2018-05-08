@@ -118,7 +118,7 @@
  */
 var desktop_breakpoint = 1200;
 var large_tablet_breakpoint = 1024;
-var tablet_breakpoint = 768;
+var tablet_breakpoint = 769;
 var mobile_breakpoint = 420;
 
 var desktop_column = 1170;

@@ -49,8 +49,10 @@
         margin-left: rem(32px);
         margin-right: rem(32px);
         @include breakpoint(desktop) {
-          margin-left: rem(80px);
-          margin-right: rem(48px);
+          body:not(.large-fonts) & {
+            margin-left: rem(80px);
+            margin-right: rem(48px);
+          }
         }
       }
       .header-title {

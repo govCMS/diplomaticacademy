@@ -2,7 +2,8 @@
 // GENERAL FOOTER MENUS
 // =========================================================
 .region-footer {
-  background-color: $primary_1;
+  background-color: $academy_green;
+  margin-top: 5rem;
   .block-menu, .block-menu-block {
     &>h2 {
       @include visually-hidden;
@@ -70,3 +71,7 @@
     }
   }
 }
+
+// body {
+//   background-color: red;
+// }

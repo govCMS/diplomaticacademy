@@ -110,9 +110,11 @@ function dfata_theme_preprocess_field(&$variables) {
     );
   }
   if ($variables['element']['#field_name'] === 'field_title' && $variables['element']['#bundle'] == "paragraph_with_title") {
-    // Surround the title with an <h3> tag.
-    $variables['items'][0]['#markup'] = '<h3>' . $variables['items'][0]['#markup'] . '</h3>';
+    // Surround the title with an <h2> tag.
+    $variables['items'][0]['#markup'] = '<h2>' . $variables['items'][0]['#markup'] . '</h2>';
+
   }
+  
 }
 
 /**
@@ -357,3 +359,16 @@ function dfata_theme_mail_alter(&$message) {
     $message['body'][] = $message['params']['message'];
   }
 }
+
+/**
+ * Implements template_preprocess_file_entity
+ *
+ */
+function dfata_theme_preprocess_file_entity(&$variables) {
+  //alter to remove any empty h2 headings
+  $variables['no_title'] = false;
+  if ($variables['title_attributes_array']['class'][0] == 'element-invisible') {
+    $variables['no_title'] = true;
+  }
+}
+
