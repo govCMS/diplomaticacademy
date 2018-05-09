@@ -44,13 +44,6 @@ html {
             color: $academy_green;
           }
         }
-        .title_image {
-          @include breakpoint(tablet) {
-            position: absolute;
-            right: 1.25rem;
-            //top: 3.5rem;
-          }
-        }
       }
     }
   }

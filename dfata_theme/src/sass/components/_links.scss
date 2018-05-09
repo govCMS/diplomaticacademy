@@ -1,10 +1,13 @@
-#page {
+#page,  {
   a {
-  border-bottom: solid 1px $academy_green !important;
-  text-decoration: none;
-  &:hover {
+  border-bottom: 0 !important;
+  text-decoration: underline;
+  &:hover, &:active {
     color: $primary_3 !important;
     background-color: transparent !important;
+  }
+  > img:hover {
+    opacity: 0.5;
   }
   }
   #block-views-latest-news-related a {
@@ -15,5 +18,16 @@
   }
   h2 a {
     border-bottom: none !important;
+  }
+  #content .view .view-content .views-row h2 a:focus {
+    background-color: $academy_light_grey;
+  }
+}
+
+.header__inner .header__secondary-menu a {
+  &:hover, &:active {
+    color: $primary_3 !important;
+    background-color: transparent !important;
+    text-decoration: underline;
   }
 }

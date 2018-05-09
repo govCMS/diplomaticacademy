@@ -50,6 +50,7 @@
       margin: 0;
     }
     .field-name-field-image {
+
       a {
         border-bottom: none;
         transition: none;
@@ -59,6 +60,25 @@
       }
       img {
         height: auto;
+      }
+    }
+    .field-name-title {
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        height: 100%;
+        width: 100%;
+        background-color: rgba($grey-darkest, .6);
+        left: 0;
+        top: 0;
+      }
+      .field-item {
+        z-index: 100;
+        position: relative;
+        color: white;
+        margin: 10px;
       }
     }
     .field-name-title {
@@ -108,7 +128,7 @@
         .field-name-field-learning-streams {
           display: block;
         }
-        background: $academy_dark_grey;
+        background: $grey-darkest;
         color: $font-color-light;
         float: none;
         width: 100%;
@@ -124,6 +144,12 @@
         a {
           border: none;
           transition: none;
+          &:hover,
+          &:focus,
+          &:active {
+            color: lighten($font-color-light, 10%) !important;
+            background-color: transparent !important;
+          }
         }
         .field-name-field-learning-streams {
           .field-item {

@@ -352,7 +352,9 @@ function dfata_theme_ds_pre_render_alter(&$layout_render_array, $context) {
 function dfata_theme_mail_alter(&$message) {
   // Alter the Contact Page emails to include our custom fields.
   if ($message['id'] == 'contact_page_mail' || $message['id'] == 'contact_page_copy') {
-    $message['body'][1] = t('First Name') . ': ' . $message['params']['name'];
+    $message['body'][1] = "This is a copy of the 'Contact Us' form you filled out on the Diplomatic Academy website (www.diplomaticacademy.dfat.gov.au).";
+    $message['body'][2] = "Please do not reply to this message as it is an automated response. If you need to send further correspondence to the Diplomatic Academy, please email diplomaticacademy@dfat.gov.au.";
+    $message['body'][] = t('First Name') . ': ' . $message['params']['name'];
     $message['body'][] = t('Surname') . ': ' . $message['params']['surname'];
     $message['body'][] = t('Email') . ': ' . $message['params']['mail'];
     $message['body'][] = t('Phone number') . ': ' . $message['params']['phone'];

@@ -6877,6 +6877,11 @@ body.not-front #content .content-header .content-header-inner h1.pantone-123, bo
 .hero-med .pantone-123.site-title,
 .hero-med body.not-front #content .content-header .content-header-inner .pantone-123.site-title {
   color: #567d64;
+  background: white;
+  margin-top: 1rem;
+  margin-left: -1.25rem;
+  padding-left: 15px;
+  border-left: 5px solid #567d64;
 }
 
 body.not-front #content .content-header .content-header-inner h1.pantone-123 + .faculty-badge, body.not-front #content .content-header .content-header-inner .hero .pantone-123.site-title + .faculty-badge, .hero body.not-front #content .content-header .content-header-inner .pantone-123.site-title + .faculty-badge, body.not-front #content .content-header .content-header-inner
@@ -6893,6 +6898,11 @@ body.not-front #content .content-header .content-header-inner h1.pantone-345, bo
 .hero-med .pantone-345.site-title,
 .hero-med body.not-front #content .content-header .content-header-inner .pantone-345.site-title {
   color: #8acaa0;
+  background: white;
+  margin-top: 1rem;
+  margin-left: -1.25rem;
+  padding-left: 15px;
+  border-left: 5px solid #8acaa0;
 }
 
 body.not-front #content .content-header .content-header-inner h1.pantone-345 + .faculty-badge, body.not-front #content .content-header .content-header-inner .hero .pantone-345.site-title + .faculty-badge, .hero body.not-front #content .content-header .content-header-inner .pantone-345.site-title + .faculty-badge, body.not-front #content .content-header .content-header-inner
@@ -6903,12 +6913,38 @@ body.not-front #content .content-header .content-header-inner h1.pantone-345 + .
   color: #8acaa0;
 }
 
+body.not-front #content .content-header .content-header-inner h1.pantone-7707, body.not-front #content .content-header .content-header-inner .hero .pantone-7707.site-title, .hero body.not-front #content .content-header .content-header-inner .pantone-7707.site-title, body.not-front #content .content-header .content-header-inner
+.hero-sml .pantone-7707.site-title,
+.hero-sml body.not-front #content .content-header .content-header-inner .pantone-7707.site-title, body.not-front #content .content-header .content-header-inner
+.hero-med .pantone-7707.site-title,
+.hero-med body.not-front #content .content-header .content-header-inner .pantone-7707.site-title {
+  color: #404b54;
+  background: white;
+  margin-top: 1rem;
+  margin-left: -1.25rem;
+  padding-left: 15px;
+  border-left: 5px solid #404b54;
+}
+
+body.not-front #content .content-header .content-header-inner h1.pantone-7707 + .faculty-badge, body.not-front #content .content-header .content-header-inner .hero .pantone-7707.site-title + .faculty-badge, .hero body.not-front #content .content-header .content-header-inner .pantone-7707.site-title + .faculty-badge, body.not-front #content .content-header .content-header-inner
+.hero-sml .pantone-7707.site-title + .faculty-badge,
+.hero-sml body.not-front #content .content-header .content-header-inner .pantone-7707.site-title + .faculty-badge, body.not-front #content .content-header .content-header-inner
+.hero-med .pantone-7707.site-title + .faculty-badge,
+.hero-med body.not-front #content .content-header .content-header-inner .pantone-7707.site-title + .faculty-badge {
+  color: #404b54;
+}
+
 body.not-front #content .content-header .content-header-inner h1.pantone-7545, body.not-front #content .content-header .content-header-inner .hero .pantone-7545.site-title, .hero body.not-front #content .content-header .content-header-inner .pantone-7545.site-title, body.not-front #content .content-header .content-header-inner
 .hero-sml .pantone-7545.site-title,
 .hero-sml body.not-front #content .content-header .content-header-inner .pantone-7545.site-title, body.not-front #content .content-header .content-header-inner
 .hero-med .pantone-7545.site-title,
 .hero-med body.not-front #content .content-header .content-header-inner .pantone-7545.site-title {
   color: #4b5965;
+  background: white;
+  margin-top: 1rem;
+  margin-left: -1.25rem;
+  padding-left: 15px;
+  border-left: 5px solid #4b5965;
 }
 
 body.not-front #content .content-header .content-header-inner h1.pantone-7545 + .faculty-badge, body.not-front #content .content-header .content-header-inner .hero .pantone-7545.site-title + .faculty-badge, .hero body.not-front #content .content-header .content-header-inner .pantone-7545.site-title + .faculty-badge, body.not-front #content .content-header .content-header-inner
@@ -6925,6 +6961,11 @@ body.not-front #content .content-header .content-header-inner h1.pantone-7005, b
 .hero-med .pantone-7005.site-title,
 .hero-med body.not-front #content .content-header .content-header-inner .pantone-7005.site-title {
   color: #666d70;
+  background: white;
+  margin-top: 1rem;
+  margin-left: -1.25rem;
+  padding-left: 15px;
+  border-left: 5px solid #666d70;
 }
 
 body.not-front #content .content-header .content-header-inner h1.pantone-7005 + .faculty-badge, body.not-front #content .content-header .content-header-inner .hero .pantone-7005.site-title + .faculty-badge, .hero body.not-front #content .content-header .content-header-inner .pantone-7005.site-title + .faculty-badge, body.not-front #content .content-header .content-header-inner
@@ -6941,6 +6982,11 @@ body.not-front #content .content-header .content-header-inner h1.pantone-428, bo
 .hero-med .pantone-428.site-title,
 .hero-med body.not-front #content .content-header .content-header-inner .pantone-428.site-title {
   color: #c6cdd1;
+  background: white;
+  margin-top: 1rem;
+  margin-left: -1.25rem;
+  padding-left: 15px;
+  border-left: 5px solid #c6cdd1;
 }
 
 body.not-front #content .content-header .content-header-inner h1.pantone-428 + .faculty-badge, body.not-front #content .content-header .content-header-inner .hero .pantone-428.site-title + .faculty-badge, .hero body.not-front #content .content-header .content-header-inner .pantone-428.site-title + .faculty-badge, body.not-front #content .content-header .content-header-inner
@@ -6957,6 +7003,11 @@ body.not-front #content .content-header .content-header-inner h1.pantone-427, bo
 .hero-med .pantone-427.site-title,
 .hero-med body.not-front #content .content-header .content-header-inner .pantone-427.site-title {
   color: #d8dcdb;
+  background: white;
+  margin-top: 1rem;
+  margin-left: -1.25rem;
+  padding-left: 15px;
+  border-left: 5px solid #d8dcdb;
 }
 
 body.not-front #content .content-header .content-header-inner h1.pantone-427 + .faculty-badge, body.not-front #content .content-header .content-header-inner .hero .pantone-427.site-title + .faculty-badge, .hero body.not-front #content .content-header .content-header-inner .pantone-427.site-title + .faculty-badge, body.not-front #content .content-header .content-header-inner
@@ -6973,6 +7024,11 @@ body.not-front #content .content-header .content-header-inner h1.pantone-7465, b
 .hero-med .pantone-7465.site-title,
 .hero-med body.not-front #content .content-header .content-header-inner .pantone-7465.site-title {
   color: #00796b;
+  background: white;
+  margin-top: 1rem;
+  margin-left: -1.25rem;
+  padding-left: 15px;
+  border-left: 5px solid #00796b;
 }
 
 body.not-front #content .content-header .content-header-inner h1.pantone-7465 + .faculty-badge, body.not-front #content .content-header .content-header-inner .hero .pantone-7465.site-title + .faculty-badge, .hero body.not-front #content .content-header .content-header-inner .pantone-7465.site-title + .faculty-badge, body.not-front #content .content-header .content-header-inner
@@ -6989,6 +7045,11 @@ body.not-front #content .content-header .content-header-inner h1.pantone-577, bo
 .hero-med .pantone-577.site-title,
 .hero-med body.not-front #content .content-header .content-header-inner .pantone-577.site-title {
   color: #33691e;
+  background: white;
+  margin-top: 1rem;
+  margin-left: -1.25rem;
+  padding-left: 15px;
+  border-left: 5px solid #33691e;
 }
 
 body.not-front #content .content-header .content-header-inner h1.pantone-577 + .faculty-badge, body.not-front #content .content-header .content-header-inner .hero .pantone-577.site-title + .faculty-badge, .hero body.not-front #content .content-header .content-header-inner .pantone-577.site-title + .faculty-badge, body.not-front #content .content-header .content-header-inner
@@ -7005,6 +7066,11 @@ body.not-front #content .content-header .content-header-inner h1.pantone-7591, b
 .hero-med .pantone-7591.site-title,
 .hero-med body.not-front #content .content-header .content-header-inner .pantone-7591.site-title {
   color: #b4004e;
+  background: white;
+  margin-top: 1rem;
+  margin-left: -1.25rem;
+  padding-left: 15px;
+  border-left: 5px solid #b4004e;
 }
 
 body.not-front #content .content-header .content-header-inner h1.pantone-7591 + .faculty-badge, body.not-front #content .content-header .content-header-inner .hero .pantone-7591.site-title + .faculty-badge, .hero body.not-front #content .content-header .content-header-inner .pantone-7591.site-title + .faculty-badge, body.not-front #content .content-header .content-header-inner
@@ -7021,6 +7087,11 @@ body.not-front #content .content-header .content-header-inner h1.pantone-431, bo
 .hero-med .pantone-431.site-title,
 .hero-med body.not-front #content .content-header .content-header-inner .pantone-431.site-title {
   color: #495965;
+  background: white;
+  margin-top: 1rem;
+  margin-left: -1.25rem;
+  padding-left: 15px;
+  border-left: 5px solid #495965;
 }
 
 body.not-front #content .content-header .content-header-inner h1.pantone-431 + .faculty-badge, body.not-front #content .content-header .content-header-inner .hero .pantone-431.site-title + .faculty-badge, .hero body.not-front #content .content-header .content-header-inner .pantone-431.site-title + .faculty-badge, body.not-front #content .content-header .content-header-inner
@@ -7037,6 +7108,11 @@ body.not-front #content .content-header .content-header-inner h1.pantone-2220c, 
 .hero-med .pantone-2220c.site-title,
 .hero-med body.not-front #content .content-header .content-header-inner .pantone-2220c.site-title {
   color: #00838f;
+  background: white;
+  margin-top: 1rem;
+  margin-left: -1.25rem;
+  padding-left: 15px;
+  border-left: 5px solid #00838f;
 }
 
 body.not-front #content .content-header .content-header-inner h1.pantone-2220c + .faculty-badge, body.not-front #content .content-header .content-header-inner .hero .pantone-2220c.site-title + .faculty-badge, .hero body.not-front #content .content-header .content-header-inner .pantone-2220c.site-title + .faculty-badge, body.not-front #content .content-header .content-header-inner
@@ -7053,6 +7129,11 @@ body.not-front #content .content-header .content-header-inner h1.pantone-7738, b
 .hero-med .pantone-7738.site-title,
 .hero-med body.not-front #content .content-header .content-header-inner .pantone-7738.site-title {
   color: #bf360c;
+  background: white;
+  margin-top: 1rem;
+  margin-left: -1.25rem;
+  padding-left: 15px;
+  border-left: 5px solid #bf360c;
 }
 
 body.not-front #content .content-header .content-header-inner h1.pantone-7738 + .faculty-badge, body.not-front #content .content-header .content-header-inner .hero .pantone-7738.site-title + .faculty-badge, .hero body.not-front #content .content-header .content-header-inner .pantone-7738.site-title + .faculty-badge, body.not-front #content .content-header .content-header-inner
@@ -7069,6 +7150,11 @@ body.not-front #content .content-header .content-header-inner h1.pantone-2020c, 
 .hero-med .pantone-2020c.site-title,
 .hero-med body.not-front #content .content-header .content-header-inner .pantone-2020c.site-title {
   color: #512da8;
+  background: white;
+  margin-top: 1rem;
+  margin-left: -1.25rem;
+  padding-left: 15px;
+  border-left: 5px solid #512da8;
 }
 
 body.not-front #content .content-header .content-header-inner h1.pantone-2020c + .faculty-badge, body.not-front #content .content-header .content-header-inner .hero .pantone-2020c.site-title + .faculty-badge, .hero body.not-front #content .content-header .content-header-inner .pantone-2020c.site-title + .faculty-badge, body.not-front #content .content-header .content-header-inner
@@ -7085,6 +7171,11 @@ body.not-front #content .content-header .content-header-inner h1.pantone-7474, b
 .hero-med .pantone-7474.site-title,
 .hero-med body.not-front #content .content-header .content-header-inner .pantone-7474.site-title {
   color: #1565c0;
+  background: white;
+  margin-top: 1rem;
+  margin-left: -1.25rem;
+  padding-left: 15px;
+  border-left: 5px solid #1565c0;
 }
 
 body.not-front #content .content-header .content-header-inner h1.pantone-7474 + .faculty-badge, body.not-front #content .content-header .content-header-inner .hero .pantone-7474.site-title + .faculty-badge, .hero body.not-front #content .content-header .content-header-inner .pantone-7474.site-title + .faculty-badge, body.not-front #content .content-header .content-header-inner
@@ -7101,6 +7192,11 @@ body.not-front #content .content-header .content-header-inner h1.pantone-7730, b
 .hero-med .pantone-7730.site-title,
 .hero-med body.not-front #content .content-header .content-header-inner .pantone-7730.site-title {
   color: #bc5100;
+  background: white;
+  margin-top: 1rem;
+  margin-left: -1.25rem;
+  padding-left: 15px;
+  border-left: 5px solid #bc5100;
 }
 
 body.not-front #content .content-header .content-header-inner h1.pantone-7730 + .faculty-badge, body.not-front #content .content-header .content-header-inner .hero .pantone-7730.site-title + .faculty-badge, .hero body.not-front #content .content-header .content-header-inner .pantone-7730.site-title + .faculty-badge, body.not-front #content .content-header .content-header-inner
@@ -7117,6 +7213,11 @@ body.not-front #content .content-header .content-header-inner h1.pantone-7592, b
 .hero-med .pantone-7592.site-title,
 .hero-med body.not-front #content .content-header .content-header-inner .pantone-7592.site-title {
   color: #8e0000;
+  background: white;
+  margin-top: 1rem;
+  margin-left: -1.25rem;
+  padding-left: 15px;
+  border-left: 5px solid #8e0000;
 }
 
 body.not-front #content .content-header .content-header-inner h1.pantone-7592 + .faculty-badge, body.not-front #content .content-header .content-header-inner .hero .pantone-7592.site-title + .faculty-badge, .hero body.not-front #content .content-header .content-header-inner .pantone-7592.site-title + .faculty-badge, body.not-front #content .content-header .content-header-inner
@@ -7136,7 +7237,7 @@ a {
 }
 
 html {
-  color: #4b5965;
+  color: #404b54;
 }
 
 .header__inner {
@@ -7600,7 +7701,7 @@ html:not(.flexbox) .header__inner .logo-and-search .logo-wrapper a {
 }
 
 .region-navigation {
-  background-color: #4b5965;
+  background-color: #404b54;
 }
 
 .region-navigation .block-superfish {
@@ -7639,6 +7740,9 @@ html:not(.no-js) .region-navigation .block-superfish ul.sf-menu:not(.superfish-p
   display: table-cell;
   vertical-align: top;
   float: none;
+  transition: all 0.2s;
+  border-left: 1px solid #404b54;
+  border-right: 1px solid #404b54;
 }
 
 .region-navigation .block-superfish ul.sf-menu > li.menuparent > a:after {
@@ -7653,8 +7757,13 @@ html:not(.no-js) .region-navigation .block-superfish ul.sf-menu:not(.superfish-p
   margin-left: 0.3125rem;
 }
 
-.region-navigation .block-superfish ul.sf-menu > li.active-trail > a {
-  color: #567d64;
+.region-navigation .block-superfish ul.sf-menu > li.active-trail, .region-navigation .block-superfish ul.sf-menu > li:hover, .region-navigation .block-superfish ul.sf-menu > li:focus, .region-navigation .block-superfish ul.sf-menu > li:active {
+  background-color: #8acaa0;
+  transition: 0s;
+}
+
+.region-navigation .block-superfish ul.sf-menu > li.active-trail > a, .region-navigation .block-superfish ul.sf-menu > li:hover > a, .region-navigation .block-superfish ul.sf-menu > li:focus > a, .region-navigation .block-superfish ul.sf-menu > li:active > a {
+  color: #404b54;
 }
 
 .region-navigation .block-superfish ul.sf-menu > li > a {
@@ -7784,9 +7893,10 @@ html.large-fonts {
 #content [type='submit'],
 #content [type='reset'],
 #content [type='button'] {
-  background-color: #c6cdd1;
+  background-color: #404b54;
   color: #5b6870;
   border-color: #8e9ba3;
+  transition: all 0.2s;
 }
 
 #content button:hover, #content button:focus,
@@ -7802,6 +7912,7 @@ html.large-fonts {
 #content [type='button']:focus {
   background-color: #8e9ba3;
   color: #5b6870;
+  transition: 0s;
 }
 
 #content button:active,
@@ -7868,13 +7979,6 @@ body.not-front #content .content-header .content-header-inner h1 + .faculty-badg
 .hero-med .site-title + .faculty-badge,
 .hero-med body.not-front #content .content-header .content-header-inner .site-title + .faculty-badge {
   color: #567d64;
-}
-
-@media (min-width: 769px) {
-  body.not-front #content .content-header .content-header-inner .title_image {
-    position: absolute;
-    right: 1.25rem;
-  }
 }
 
 .content-body > .messages {
@@ -8358,9 +8462,10 @@ aside.sidebar-first {
 #content [type='submit'],
 #content [type='reset'],
 #content [type='button'] {
-  background-color: #c6cdd1;
+  background-color: #404b54;
   color: white;
   border-color: #10505F;
+  transition: all 0.2s;
 }
 
 #content button:hover, #content button:focus,
@@ -8376,6 +8481,7 @@ aside.sidebar-first {
 #content [type='button']:focus {
   background-color: #10505F;
   color: white;
+  transition: 0s;
 }
 
 #content button:active,
@@ -8388,7 +8494,7 @@ aside.sidebar-first {
 }
 
 .region-footer {
-  background-color: #567d64;
+  background-color: #8acaa0;
   margin-top: 5rem;
 }
 
@@ -8412,7 +8518,7 @@ aside.sidebar-first {
   box-sizing: content-box;
   padding-top: 1.0625rem;
   padding-bottom: 1.0625rem;
-  color: #4b5965;
+  color: #404b54;
 }
 
 @media (min-width: 769px) {
@@ -8444,7 +8550,7 @@ aside.sidebar-first {
 }
 
 .region-footer .block-menu .content ul.menu > li, .region-footer .block-menu-block .content ul.menu > li {
-  color: #4b5965;
+  color: #404b54;
   /*
   See more link
 
@@ -8509,7 +8615,7 @@ aside.sidebar-first {
 }
 
 .region-footer .block-menu .content ul.menu > li a, .region-footer .block-menu-block .content ul.menu > li a {
-  color: #4b5965;
+  color: #404b54;
   text-decoration: none;
   outline: none;
   border-bottom: solid 1px #f0f3f5;
@@ -8563,7 +8669,7 @@ aside.sidebar-first {
 }
 
 .region-footer .block-menu .content ul.menu > li span.placeholder-link, .region-footer .block-menu-block .content ul.menu > li span.placeholder-link {
-  color: rgba(75, 89, 101, 0.7);
+  color: rgba(64, 75, 84, 0.7);
   border-bottom: none;
   cursor: not-allowed;
 }
@@ -8977,24 +9083,32 @@ ul.tabs.primary {
   margin-bottom: 1.375rem;
 }
 
-.content-header .breadcrumbs--inverted {
+#page .content-header .content-header-inner.has-image .breadcrumbs--inverted {
   display: block;
   background-color: transparent;
   color: inherit;
 }
 
-.content-header .breadcrumbs--inverted ul {
+#page .content-header .content-header-inner.has-image .breadcrumbs--inverted ul {
   padding-top: 0.5rem;
   padding-bottom: 0;
 }
 
-.content-header .breadcrumbs--inverted ul li a {
-  white-space: nowrap;
-  color: #567d64;
+#page .content-header .content-header-inner.has-image .breadcrumbs--inverted ul li {
+  color: white;
 }
 
-.content-header .breadcrumbs--inverted ul li:not(:last-child) {
-  background-image: url("../../vendor/gov-au-ui-kit/assets/img/icons/arrow-right--aqua.svg");
+#page .content-header .content-header-inner.has-image .breadcrumbs--inverted ul li a {
+  white-space: nowrap;
+}
+
+#page .content-header .content-header-inner.has-image .breadcrumbs--inverted ul li a:hover, #page .content-header .content-header-inner.has-image .breadcrumbs--inverted ul li a:focus {
+  color: #567d64 !important;
+  background: white !important;
+}
+
+#page .content-header .content-header-inner.has-image .breadcrumbs--inverted ul li:not(:last-child) {
+  background-image: url("../../vendor/gov-au-ui-kit/assets/img/icons/arrow-right--white.svg");
   background-position: right top 7px;
 }
 
@@ -9202,13 +9316,14 @@ ul.tabs.primary {
 .view-latest-news .owl-controls .owl-page {
   display: block;
   background-color: #c6cdd1;
-  color: #4b5965;
+  color: #404b54;
   margin-bottom: 0.625rem;
   box-sizing: border-box;
   position: relative;
 }
 
 .view-latest-news .owl-controls .owl-page.active {
+  color: white;
   background-color: #567d64;
 }
 
@@ -9227,6 +9342,11 @@ ul.tabs.primary {
   top: 50%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
+}
+
+.view-latest-news .owl-controls .owl-page:hover {
+  color: white;
+  background-color: #567d64;
 }
 
 .view-latest-news .owl-controls .owl-page .carousel-desk-title {
@@ -10695,6 +10815,28 @@ body.not-front #content .has-sidebar .view .views-row .field {
 }
 
 .region-content .bean-faculties .image-wrapper .field-name-title {
+  position: relative;
+}
+
+.region-content .bean-faculties .image-wrapper .field-name-title::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(64, 75, 84, 0.6);
+  left: 0;
+  top: 0;
+}
+
+.region-content .bean-faculties .image-wrapper .field-name-title .field-item {
+  z-index: 100;
+  position: relative;
+  color: white;
+  margin: 10px;
+}
+
+.region-content .bean-faculties .image-wrapper .field-name-title {
   position: absolute;
   bottom: 7px;
   right: 0;
@@ -10739,7 +10881,7 @@ body.not-front #content .has-sidebar .view .views-row .field {
 }
 
 #block-bean-our-faculties .field-name-field-faculties > .field-items > .field-item:last-child {
-  background: #4b5965;
+  background: #404b54;
   color: #c6cdd1;
   float: none;
   width: 100%;
@@ -10763,6 +10905,11 @@ body.not-front #content .has-sidebar .view .views-row .field {
 #block-bean-our-faculties .field-name-field-faculties > .field-items > .field-item:last-child a {
   border: none;
   transition: none;
+}
+
+#block-bean-our-faculties .field-name-field-faculties > .field-items > .field-item:last-child a:hover, #block-bean-our-faculties .field-name-field-faculties > .field-items > .field-item:last-child a:focus, #block-bean-our-faculties .field-name-field-faculties > .field-items > .field-item:last-child a:active {
+  color: #e2e6e8 !important;
+  background-color: transparent !important;
 }
 
 #block-bean-our-faculties .field-name-field-faculties > .field-items > .field-item:last-child .field-name-field-learning-streams .field-item {
@@ -10903,25 +11050,28 @@ body.not-front #content .has-sidebar .view .views-row .field {
   bottom: 0;
   z-index: -1;
   overflow: hidden;
-  filter: opacity(30%);
-  -webkit-filter: opacity(30%);
 }
 
 #content .page__title_image.title_image img {
   width: 100%;
 }
 
-body.not-front.page-node.node-type-news-article #content .content-header .content-header-inner.has-image {
+body.not-front #content .content-header-inner.has-image {
+  background-color: rgba(64, 75, 84, 0.5);
   height: 11.25rem;
 }
 
 @media (min-width: 769px) {
-  body.not-front.page-node.node-type-news-article #content .content-header .content-header-inner.has-image {
+  body.not-front #content .content-header-inner.has-image {
     height: 18.75rem;
   }
 }
 
-body.not-front.page-node.node-type-news-article #content .content-header .content-header-inner.has-image .title_image {
+body.not-front #content .content-header-inner.has-image .page__title {
+  color: white;
+}
+
+body.not-front #content .content-header-inner.has-image .title_image {
   position: absolute;
   right: 0;
   left: 0;
@@ -10929,32 +11079,16 @@ body.not-front.page-node.node-type-news-article #content .content-header .conten
   bottom: 0;
   z-index: -1;
   overflow: hidden;
-  filter: opacity(30%);
-  -webkit-filter: opacity(30%);
 }
 
-body.not-front.page-node.node-type-news-article #content .content-header .content-header-inner.has-image .title_image img {
-  width: auto !important;
-  height: 100%;
-  max-width: 1210px;
-}
-
-body.not-front.page-node.node-type-news-article #content .content-header .content-header-inner.has-image .title_image:after {
+body.not-front #content .content-header-inner.has-image .title_image:after {
   content: ' ';
   position: absolute;
   right: 0;
   left: 0;
   top: 0;
   bottom: 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent);
-}
-
-body.not-front.page-node.node-type-news-article #content .content-header .content-header-inner.has-image .breadcrumbs--inverted li:last-child {
-  color: #486954;
-}
-
-body.not-front.page-node.node-type-news-article #content .content-header .content-header-inner.has-image .breadcrumbs--inverted li:not(:last-child) {
-  background-image: url("../../vendor/gov-au-ui-kit/assets/img/icons/arrow-right--green.svg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), transparent);
 }
 
 .page-node.node-type-news-article .node-news-article .field-name-field-tags > .field-items > .field-item {
@@ -10963,13 +11097,17 @@ body.not-front.page-node.node-type-news-article #content .content-header .conten
 }
 
 #page a {
-  border-bottom: solid 1px #567d64 !important;
-  text-decoration: none;
+  border-bottom: 0 !important;
+  text-decoration: underline;
 }
 
-#page a:hover {
-  color: #375040 !important;
+#page a:hover, #page a:active {
+  color: #2c4134 !important;
   background-color: transparent !important;
+}
+
+#page a > img:hover {
+  opacity: 0.5;
 }
 
 #page #block-views-latest-news-related a {
@@ -10982,6 +11120,16 @@ body.not-front.page-node.node-type-news-article #content .content-header .conten
 
 #page h2 a, #page .display a {
   border-bottom: none !important;
+}
+
+#page #content .view .view-content .views-row h2 a:focus, #page #content .view .view-content .views-row .display a:focus {
+  background-color: #c6cdd1;
+}
+
+.header__inner .header__secondary-menu a:hover, .header__inner .header__secondary-menu a:active {
+  color: #2c4134 !important;
+  background-color: transparent !important;
+  text-decoration: underline;
 }
 
 .learning-levels-wrapper {

@@ -1,4 +1,4 @@
-.content-header {
+#page .content-header .content-header-inner.has-image {
   .breadcrumbs--inverted {
     display: block;
     background-color: transparent;
@@ -7,13 +7,20 @@
       padding-top: rem(8px);
       padding-bottom: 0;
       li {
+        color: white;
         a {
           white-space: nowrap;
-          color: $academy_green;
+          //border-bottom: solid 1px pantone(345) !important;
+          &:hover,
+          &:focus {
+            color: $academy_green !important;
+            background: white !important;
+            //border-bottom: solid 1px lighten($font-color-light, 10%) !important;
+          }
         }
         &:not(:last-child) {
           // Override previously defined icon with new path.
-          background-image: ui-kit-icon("arrow-right--aqua.svg");
+          background-image: ui-kit-icon("arrow-right--white.svg");
           background-position: right top 7px;
         }
       }

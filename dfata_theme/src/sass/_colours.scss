@@ -1,6 +1,7 @@
 $pantones: (
   123:    rgb(86, 125, 100), // Academy Green
   345:    rgb(138, 202, 160), // Green
+  7707:   rgb(64, 75, 84), //Grey Darkest
   7545:   rgb(75, 89, 101), // Grey Dark
   7005:   rgb(102, 109, 112), // Grey mid
   428:    rgb(198, 205, 209), // Grey light
@@ -30,6 +31,11 @@ body.not-front #content .content-header .content-header-inner h1 {
   @each $code, $color in $pantones {
     &.pantone-#{$code} {
       color: $color;
+      background: rgba(255, 255, 255, 1);
+      margin-top: 1rem;
+      margin-left: -1.25rem;
+      padding-left: 15px;
+      border-left: 5px solid $color;
       + .faculty-badge {
         color: $color;
       }

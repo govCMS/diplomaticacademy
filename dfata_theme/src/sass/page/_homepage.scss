@@ -148,11 +148,12 @@
     .owl-page {
       display: block;
       background-color: $academy_light_grey;
-      color: $academy_dark_grey;
+      color: $font-color-dark;
       margin-bottom: rem(10px);
       box-sizing: border-box;
       position: relative;
       &.active {
+        color: white;
         background-color: $academy_green;
         &:before {
           display: none;
@@ -169,6 +170,10 @@
           top: 50%;
           @include transform(translateY(-50%));
         }
+      }
+      &:hover {
+        color: white;
+        background-color: $academy_green;
       }
       .carousel-desk-title {
         box-sizing: border-box;

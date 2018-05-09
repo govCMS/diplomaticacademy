@@ -2,7 +2,7 @@
 // TOP NAVIGATION
 // =========================================================
 .region-navigation {
-  background-color: $bg_colour;
+  background-color: $grey_darkest;
   .block-superfish {
     @include center-column($desktop_column);
     display: none;
@@ -28,6 +28,9 @@
         display: table-cell;
         vertical-align: top;
         float: none;
+        transition: all 0.2s;
+        border-left: 1px solid $grey_darkest;
+        border-right: 1px solid $grey_darkest;
         &.menuparent {
           &>a:after {
             content: '';
@@ -41,9 +44,14 @@
             margin-left: rem(5px);
           }
         }
-        &.active-trail {
+        &.active-trail,
+        &:hover,
+        &:focus,
+        &:active {
+          background-color: pantone(345);
+          transition: 0s;
           &>a {
-            color: $primary_1;
+            color: $grey_darkest;
           }
         }
         &>a {

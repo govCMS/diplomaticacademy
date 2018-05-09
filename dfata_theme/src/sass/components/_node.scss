@@ -91,62 +91,42 @@
     bottom: 0;
     z-index: -1;
     overflow: hidden;
-    filter: opacity(30%);
-    -webkit-filter: opacity(30%);
     img {
       width: 100%;
     }
   }
+}
 
-  body.not-front.page-node.node-type-news-article & {
-    .content-header {
-      .content-header-inner.has-image {
-        height: rem(180px);
-        @include breakpoint(tablet) {
-          height: rem(300px);
-        }
-        .title_image {
-          position: absolute;
-          right: 0;
-          left: 0;
-          top: 0;
-          bottom: 0;
-          z-index: -1;
-          overflow: hidden;
-          filter: opacity(30%);
-          -webkit-filter: opacity(30%);
+body.not-front #content {
+.content-header-inner.has-image {
+  background-color: rgba($grey-darkest, .5);
+  height: rem(180px);
+  @include breakpoint(tablet) {
+    height: rem(300px);
+  }
+  .page__title {
+    color: white;
+  }
+  .title_image {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    overflow: hidden;
 
-          img {
-            width: auto !important;
-            height: 100%;
-            max-width: 1210px;
-          }
-
-          &:after {
-            content: ' ';
-            position: absolute;
-            right: 0;
-            left: 0;
-            top: 0;
-            bottom: 0;
-            background: linear-gradient(to bottom, rgba(0,0,0,0.5), transparent);
-          }
-        }
-
-        .breadcrumbs--inverted {
-          li {
-            &:last-child {
-              color: $primary_2;
-            }
-            &:not(:last-child) {
-              // Override previously defined icon with new path.
-              background-image: ui-kit-icon("arrow-right--green.svg");
-            }
-          }
-        }
-      }
+    &:after {
+      content: ' ';
+      position: absolute;
+      right: 0;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.6), transparent);
     }
   }
+}
 }
 
 .page-node.node-type-news-article .node-news-article {

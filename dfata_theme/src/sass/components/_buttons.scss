@@ -1,0 +1,23 @@
+// Nest this mixin for specifying new button colours
+@mixin button-colours($bg-colour, $bg-colour--hover, $bg-colour--active, $text-colour, $text-colour--hover: $text-colour) {
+  button,
+  .button,
+  [role='button'],
+  [type='submit'],
+  [type='reset'],
+  [type='button'] {
+    background-color: $grey_darkest;
+    color: $text-colour;
+    border-color: $bg-colour--hover;
+    transition: all 0.2s;
+    &:hover,
+    &:focus {
+      background-color: $bg-colour--hover;
+      color: $text-colour--hover;
+      transition: 0s;
+    }
+    &:active {
+      background-color: $bg-colour--active;
+    }
+  }
+}

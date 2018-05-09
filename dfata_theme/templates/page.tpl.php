@@ -13,7 +13,7 @@
   <div class="header__inner">
     <?php if ($secondary_menu): ?>
       <nav class="header__secondary-menu" id="secondary-menu" role="navigation">
-        <?php 
+        <?php
 
         $theme_atts = array(
           'links' => $secondary_menu,
@@ -42,8 +42,8 @@
             ),
           );
         }
-        
-        print theme('links__system_secondary_menu', $theme_atts); 
+
+        print theme('links__system_secondary_menu', $theme_atts);
 
         ?>
       </nav>
@@ -61,7 +61,7 @@
               'html' => TRUE,
               'attributes' => array(
                 'id' => 'logo-gov',
-                'title' => t('Back to Homepage'),
+                'title' => t('Diplomatic Academy'),
                 'rel' => 'home',
                 'class' => array('header__logo_gov'),
               ),
@@ -86,7 +86,7 @@
               'html' => TRUE,
               'attributes' => array(
                 'id' => 'logo',
-                'title' => t('Back to Homepage'),
+                'title' => t('Diplomatic Academy'),
                 'rel' => 'home',
                 'class' => $logo_class,
               ),
@@ -125,7 +125,7 @@
   <div id="main">
     <div id="content" class="column" role="main">
       <div class="content-header">
-        <div class="content-header-inner<?php print $academy_banner_has_image; ?>">
+        <div class="content-header-inner has-image<?php print $academy_banner_has_image; ?>">
           <?php print $breadcrumb; ?>
           <a href="#skip-link" id="skip-content" class="element-invisible" tabindex="-1">Go to top of page</a>
           <a id="main-content"></a>
@@ -140,7 +140,11 @@
         </div>
       </div>
       <div class="content-body">
-        <?php print $messages; ?>
+        <?php if (!empty($messages)): ?>
+          <div role="alert">
+            <?php print $messages; ?>
+          </div>
+        <?php endif; ?>
         <?php print render($tabs); ?>
         <?php print render($page['help']); ?>
         <?php if ($action_links): ?>
