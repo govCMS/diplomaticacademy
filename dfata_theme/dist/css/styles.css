@@ -9083,31 +9083,31 @@ ul.tabs.primary {
   margin-bottom: 1.375rem;
 }
 
-#page .content-header .content-header-inner.has-image .breadcrumbs--inverted {
+#page #main .content-header .content-header-inner.has-image .breadcrumbs--inverted {
   display: block;
   background-color: transparent;
   color: inherit;
 }
 
-#page .content-header .content-header-inner.has-image .breadcrumbs--inverted ul {
+#page #main .content-header .content-header-inner.has-image .breadcrumbs--inverted ul {
   padding-top: 0.5rem;
   padding-bottom: 0;
 }
 
-#page .content-header .content-header-inner.has-image .breadcrumbs--inverted ul li {
+#page #main .content-header .content-header-inner.has-image .breadcrumbs--inverted ul li {
   color: white;
 }
 
-#page .content-header .content-header-inner.has-image .breadcrumbs--inverted ul li a {
+#page #main .content-header .content-header-inner.has-image .breadcrumbs--inverted ul li a {
   white-space: nowrap;
 }
 
-#page .content-header .content-header-inner.has-image .breadcrumbs--inverted ul li a:hover, #page .content-header .content-header-inner.has-image .breadcrumbs--inverted ul li a:focus {
-  color: #567d64 !important;
-  background: white !important;
+#page #main .content-header .content-header-inner.has-image .breadcrumbs--inverted ul li a:hover, #page #main .content-header .content-header-inner.has-image .breadcrumbs--inverted ul li a:focus {
+  color: #567d64;
+  background: white;
 }
 
-#page .content-header .content-header-inner.has-image .breadcrumbs--inverted ul li:not(:last-child) {
+#page #main .content-header .content-header-inner.has-image .breadcrumbs--inverted ul li:not(:last-child) {
   background-image: url("../../vendor/gov-au-ui-kit/assets/img/icons/arrow-right--white.svg");
   background-position: right top 7px;
 }
@@ -9419,10 +9419,6 @@ ul.tabs.primary {
     width: calc(94.2% / 3);
     margin-right: 2.5%;
   }
-}
-
-.landing-page-tiles .panels-ipe-portlet-wrapper {
-  width: calc(95% / 3);
 }
 
 .landing-page-tiles .panels-ipe-portlet-wrapper [class*="pane-bean-landing-page-tile-"] {
@@ -10880,6 +10876,10 @@ body.not-front #content .has-sidebar .view .views-row .field {
   display: list-item;
 }
 
+#block-bean-our-faculties li {
+  list-style-type: none;
+}
+
 #block-bean-our-faculties .field-name-field-faculties > .field-items > .field-item:last-child {
   background: #404b54;
   color: #c6cdd1;
@@ -10918,6 +10918,10 @@ body.not-front #content .has-sidebar .view .views-row .field {
 
 #block-bean-our-faculties .field-name-field-faculties > .field-items > .field-item:last-child .field-name-field-learning-streams .field-item:not(:last-child):after {
   content: ', ';
+}
+
+#block-bean-our-faculty-heads li {
+  list-style-type: none;
 }
 
 #block-bean-our-faculty-heads .node-staff {
@@ -11096,39 +11100,44 @@ body.not-front #content .content-header-inner.has-image .title_image:after {
   margin-left: 2rem;
 }
 
-#page a {
-  border-bottom: 0 !important;
+#page #main a, #footer a {
+  border-bottom: 0;
   text-decoration: underline;
 }
 
-#page a:hover, #page a:active {
-  color: #2c4134 !important;
-  background-color: transparent !important;
+#page #main a:hover, #page #main a:active, #footer a:hover, #footer a:active {
+  color: #2c4134;
+  background-color: transparent;
 }
 
-#page a > img:hover {
+#page #main a > img:hover, #footer a > img:hover {
   opacity: 0.5;
 }
 
-#page #block-views-latest-news-related a {
-  border-bottom: none !important;
+#page #main #block-views-latest-news-related a, #footer #block-views-latest-news-related a {
+  color: white;
 }
 
-#page .field-name-field-bean-image a {
-  border-bottom: none !important;
+#page #main #block-views-latest-news-related a:hover, #page #main #block-views-latest-news-related a:focus, #footer #block-views-latest-news-related a:hover, #footer #block-views-latest-news-related a:focus {
+  color: #567d64;
+  background: white;
 }
 
-#page h2 a, #page .display a {
-  border-bottom: none !important;
+#page #main .field-name-field-bean-image a, #footer .field-name-field-bean-image a {
+  border-bottom: none;
 }
 
-#page #content .view .view-content .views-row h2 a:focus, #page #content .view .view-content .views-row .display a:focus {
+#page #main h2 a, #page #main .display a, #footer h2 a, #footer .display a {
+  border-bottom: none;
+}
+
+#page #main #content .view .view-content .views-row h2 a:focus, #page #main #content .view .view-content .views-row .display a:focus, #footer #content .view .view-content .views-row h2 a:focus, #footer #content .view .view-content .views-row .display a:focus {
   background-color: #c6cdd1;
 }
 
-.header__inner .header__secondary-menu a:hover, .header__inner .header__secondary-menu a:active {
-  color: #2c4134 !important;
-  background-color: transparent !important;
+#header .header__inner .header__secondary-menu a:hover, #header .header__inner .header__secondary-menu a:active, #header .header__inner .header__secondary-menu a:focus {
+  color: #2c4134;
+  background-color: transparent;
   text-decoration: underline;
 }
 

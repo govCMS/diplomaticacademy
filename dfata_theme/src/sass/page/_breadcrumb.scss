@@ -1,4 +1,4 @@
-#page .content-header .content-header-inner.has-image {
+#page #main .content-header .content-header-inner.has-image {
   .breadcrumbs--inverted {
     display: block;
     background-color: transparent;
@@ -10,12 +10,10 @@
         color: white;
         a {
           white-space: nowrap;
-          //border-bottom: solid 1px pantone(345) !important;
           &:hover,
           &:focus {
-            color: $academy_green !important;
-            background: white !important;
-            //border-bottom: solid 1px lighten($font-color-light, 10%) !important;
+            color: $academy_green;
+            background: white;
           }
         }
         &:not(:last-child) {

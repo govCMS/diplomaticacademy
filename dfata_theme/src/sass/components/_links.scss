@@ -1,33 +1,37 @@
-#page,  {
+#page #main, #footer  {
   a {
-  border-bottom: 0 !important;
+  border-bottom: 0;
   text-decoration: underline;
   &:hover, &:active {
-    color: $primary_3 !important;
-    background-color: transparent !important;
+    color: $primary_3;
+    background-color: transparent;
   }
   > img:hover {
     opacity: 0.5;
   }
   }
   #block-views-latest-news-related a {
-    border-bottom: none !important;
+    color: white;
+    &:hover, &:focus {
+      color: $academy_green;
+      background: white;
+    }
   }
   .field-name-field-bean-image a {
-    border-bottom: none !important;
+    border-bottom: none;
   }
   h2 a {
-    border-bottom: none !important;
+    border-bottom: none;
   }
   #content .view .view-content .views-row h2 a:focus {
     background-color: $academy_light_grey;
   }
 }
 
-.header__inner .header__secondary-menu a {
-  &:hover, &:active {
-    color: $primary_3 !important;
-    background-color: transparent !important;
+#header .header__inner .header__secondary-menu a {
+  &:hover, &:active, &:focus {
+    color: $primary_3;
+    background-color: transparent;
     text-decoration: underline;
   }
 }

@@ -122,6 +122,9 @@
 }
 
 #block-bean-our-faculties {
+  li {
+    list-style-type: none;
+  }
   .field-name-field-faculties > .field-items {
     > .field-item {
       &:last-child {
@@ -165,6 +168,9 @@
 }
 
 #block-bean-our-faculty-heads {
+  li {
+    list-style-type: none;
+  }
   .node-staff {
     margin-bottom: rem(16px);
     position: relative;
