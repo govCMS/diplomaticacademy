@@ -61,7 +61,7 @@
               'html' => TRUE,
               'attributes' => array(
                 'id' => 'logo-gov',
-                'title' => t('Diplomatic Academy'),
+                'title' => t('Australian Government Department of Foreign Affairs and Trade - back to homepage'),
                 'rel' => 'home',
                 'class' => array('header__logo_gov'),
               ),
@@ -71,7 +71,7 @@
         <?php if ($logo): ?>
           <?php
             $logo_alt = theme_get_setting('dfata_theme_header_logo_alt');
-            $logo_alt = !empty($logo_alt) ? $logo_alt : variable_get('site_name', 'Australian Government Department of Foreign Affairs and Trade logo');
+            $logo_alt = !empty($logo_alt) ? $logo_alt : variable_get('site_name', 'Diplomatic Academy - back to homepage');
             $logo_img = theme_image(array(
               'path' => $logo,
               'alt' => $logo_alt,
@@ -86,7 +86,7 @@
               'html' => TRUE,
               'attributes' => array(
                 'id' => 'logo',
-                'title' => t('Diplomatic Academy'),
+                'title' => t('Diplomatic Academy - back to homepage'),
                 'rel' => 'home',
                 'class' => $logo_class,
               ),
