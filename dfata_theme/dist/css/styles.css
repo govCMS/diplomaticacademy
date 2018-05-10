@@ -7223,6 +7223,17 @@ html {
   color: #404b54;
 }
 
+.field-name-field-faculty-head h2, .field-name-field-faculty-head .display {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
 .header__inner {
   max-width: 73.125rem;
   margin-left: auto;

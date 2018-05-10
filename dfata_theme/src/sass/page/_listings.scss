@@ -58,7 +58,7 @@ body.not-front #content {
         h2 {
           @include listing-component-heading;
           margin-top: 0;
-          
+
           a {
             color: $primary_1;
           }

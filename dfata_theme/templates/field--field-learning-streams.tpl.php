@@ -54,7 +54,7 @@ HTML comment.
 -->
 <div class="<?php print $classes; ?>"<?php print $attributes; ?>>
   <?php if (!$label_hidden): ?>
-    <h4 class="field-label"<?php print $title_attributes; ?>><?php print $label ?>:&nbsp;</h4>
+    <h2 class="field-label"<?php print $title_attributes; ?>><?php print $label ?>:&nbsp;</h2>
   <?php endif; ?>
   <ul class="field-items"<?php print $content_attributes; ?>>
     <?php foreach ($items as $delta => $item): ?>
