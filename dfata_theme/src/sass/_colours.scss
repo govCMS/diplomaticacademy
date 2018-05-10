@@ -30,12 +30,11 @@ $pantones: (
 body.not-front #content .content-header .content-header-inner h1 {
   @each $code, $color in $pantones {
     &.pantone-#{$code} {
-      color: $color;
-      background: rgba(255, 255, 255, 1);
+      color: white;
+      background: $color;
       margin-top: 1rem;
       margin-left: -1.25rem;
-      padding-left: 15px;
-      border-left: 5px solid $color;
+      padding-left: 1.25rem;
       + .faculty-badge {
         color: $color;
       }

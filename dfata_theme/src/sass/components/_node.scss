@@ -129,6 +129,25 @@ body.not-front #content {
 }
 }
 
+body.page-contact #content {
+  .content-header-inner.has-image .page__title_image {
+    &:before {
+      content: ' ';
+      position: absolute;
+      right: 0;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      background: url("../images/contact_us.jpg") no-repeat;
+      background-size: cover;
+    }
+    img {
+      position: relative;
+      opacity: 0;
+    }
+  }
+}
+
 .page-node.node-type-news-article .node-news-article {
   .field-name-field-tags {
     > .field-items {

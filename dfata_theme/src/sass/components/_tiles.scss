@@ -6,6 +6,12 @@
     font-weight: 400;
     margin-top: 0;
     margin-bottom: 0;
+    a {
+      color: white;
+      &:hover, &:focus, &:active {
+        color: $neutral_3 !important;
+      }
+    }
   }
 }
 
