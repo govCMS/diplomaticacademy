@@ -9323,8 +9323,8 @@ ul.tabs.primary {
 }
 
 .view-latest-news .owl-controls .owl-page.active {
-  color: white;
-  background-color: #567d64;
+  color: #404b54;
+  background-color: #8acaa0;
 }
 
 .view-latest-news .owl-controls .owl-page.active:before {
@@ -9334,7 +9334,7 @@ ul.tabs.primary {
   height: 0;
   border-bottom: 15px solid transparent;
   border-top: 15px solid transparent;
-  border-right: 15px solid #567d64;
+  border-right: 15px solid #8acaa0;
   font-size: 0;
   line-height: 0;
   position: absolute;
@@ -9345,8 +9345,7 @@ ul.tabs.primary {
 }
 
 .view-latest-news .owl-controls .owl-page:hover {
-  color: white;
-  background-color: #567d64;
+  background-color: #8acaa0;
 }
 
 .view-latest-news .owl-controls .owl-page .carousel-desk-title {
@@ -10723,6 +10722,14 @@ body.not-front #content .has-sidebar .view .views-row .field {
   box-sizing: content-box;
 }
 
+#block-bean-our-faculties h3,
+#block-bean-our-faculty-heads h3 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 @media (min-width: 769px) {
   .region-content .bean-faculties .field-name-field-faculties > .field-items {
     max-width: 100%;
@@ -10838,7 +10845,7 @@ body.not-front #content .has-sidebar .view .views-row .field {
   right: 0;
   left: 0;
   margin: 0;
-  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.8));
+  background: linear-gradient(to bottom, transparent, black);
 }
 
 .region-content .bean-faculties .image-wrapper .field-name-field-badge {

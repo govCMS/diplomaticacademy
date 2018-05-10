@@ -153,8 +153,8 @@
       box-sizing: border-box;
       position: relative;
       &.active {
-        color: white;
-        background-color: $academy_green;
+        color: $font-color-dark;
+        background-color: pantone(345);
         &:before {
           display: none;
           content: '';
@@ -162,7 +162,7 @@
           height: 0;
           border-bottom: 15px solid transparent;
           border-top: 15px solid transparent;
-          border-right: 15px solid $academy_green;
+          border-right: 15px solid pantone(345);
           font-size: 0;
           line-height: 0;
           position: absolute;
@@ -172,8 +172,7 @@
         }
       }
       &:hover {
-        color: white;
-        background-color: $academy_green;
+        background-color: pantone(345);
       }
       .carousel-desk-title {
         box-sizing: border-box;
