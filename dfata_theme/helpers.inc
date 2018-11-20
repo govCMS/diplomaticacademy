@@ -95,6 +95,8 @@ function _dfata_faculty_banner_info(&$vars) {
 }
 
 function _dfata_contact_form_alter(&$form, &$form_state) {
+  drupal_set_title('Contact Us');
+  
   $form['name']['#title'] = "Your first name";
   $form['surname'] = array(
     '#type' => 'textfield',

@@ -67,7 +67,6 @@
       list-style: none;
     }
     .node-news-article {
-      max-width: 800px;
       position: relative;
       a {
         border-bottom: none;
@@ -117,22 +116,15 @@
         max-height: 48px;
         overflow: hidden;
       }
-      .owl-pause, .owl-play {
-        display: block;
-        position: absolute;
-        right: 20px;
-        top: 20px;
-        z-index: 50;
-      }
-      .front & {
-        @include breakpoint(tablet) {
-          max-width: 68.3%;
-        }
-      }
     }
   }
-  .owl-wrapper-outer {
+  .slick-prev,
+  .slick-next {
+    @include visually-hidden;
+  }
+  .slick-list {
     max-width: 800px;
+    width: 100%;
     display: inline-block;
     @include breakpoint(tablet) {
       width: 65%;
@@ -141,22 +133,22 @@
       width: 100%;
     }
   }
-  .owl-controls {
-    display: inline-block;
+  .slick-dots {
+    @include visually-hidden;
     vertical-align: top;
-    margin-left: 16px;
-    .owl-page {
+    li {
       display: block;
       background-color: $academy_light_grey;
       color: $font-color-dark;
+      margin-left: 16px;
       margin-bottom: rem(10px);
       box-sizing: border-box;
       position: relative;
-      &.active {
+      &.slick-active {
         color: $font-color-dark;
         background-color: pantone(345);
         &:before {
-          display: none;
+          display: block;
           content: '';
           width: 0;
           height: 0;
@@ -174,7 +166,14 @@
       &:hover {
         background-color: pantone(345);
       }
-      .carousel-desk-title {
+      button.carousel-desk-title {
+        background-color: transparent !important;
+        color: $academy_dark_grey !important;
+        border: 0;
+        margin: 0;
+        height: 100%;
+        line-height: $base-leading;
+        font-weight: $base-font-weight;
         box-sizing: border-box;
         display: table-cell;
         vertical-align: middle;
@@ -182,22 +181,21 @@
         padding: 9px 20px;
       }
     }
-
     @include breakpoint(tablet) {
+      @include visually-hidden-off;
+      display: inline-block !important;
       width: 32%;
-      .owl-page {
         &.active {
           &:before {
             display: block;
           }
         }
-      }
     }
 
     @include breakpoint(large_tablet) {
       width: 32.2%;
       .carousel-desk-title {
-        height: rem(67px);
+        min-height: rem(67px);
         padding: 10px 20px;
       }
     }
@@ -206,7 +204,7 @@
       width: 28%;
       max-width: 349px;
       .carousel-desk-title {
-        height: rem(82px);
+        min-height: rem(82px);
       }
     }
   }

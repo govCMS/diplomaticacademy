@@ -3,13 +3,11 @@ name        = Diplomatic Academy theme
 description = The Diplomatic Academy Kit theme based on govCMS UI Kit.
 core        = 7.x
 
-stylesheets[all][] = vendor/owl-carousel/owl.carousel.css
-stylesheets[all][] = vendor/owl-carousel/owl.transitions.css
 stylesheets[all][] = dist/css/styles.css
 
-scripts[] = vendor/owl-carousel/owl.carousel.min.js
 scripts[] = vendor/object-fit-images/ofi.browser.js
 scripts[] = dist/js/script.js
+scripts[] = vendor/slick/slick.min.js
 
 regions[header]         = Header
 regions[navigation]     = Navigation bar

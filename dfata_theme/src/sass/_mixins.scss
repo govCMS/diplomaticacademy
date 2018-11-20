@@ -62,6 +62,17 @@
   width: 1px;
 }
 
+// Turns off the visually-hidden effect.
+@mixin visually-hidden-off {
+  position: static !important;
+  border: auto;
+  clip: auto;
+  height: auto;
+  width: auto;
+  margin: auto;
+  overflow: auto;
+}
+
 @mixin transition-fade() {
   transition-timing-function: $transition-easing;
   transition-duration: $transition-timing-fast;

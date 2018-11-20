@@ -114,7 +114,7 @@ function dfata_theme_preprocess_field(&$variables) {
     $variables['items'][0]['#markup'] = '<h2>' . $variables['items'][0]['#markup'] . '</h2>';
 
   }
-  
+
 }
 
 /**
@@ -284,8 +284,8 @@ function dfata_theme_ds_pre_render_alter(&$layout_render_array, $context) {
   if ($is_bean && $is_image_text && $is_homepage_tile) {
     $title = '<h2>' . $context['entity']->title . '</h2>';
     // Remove link options and replace the link path.
-    unset($layout_render_array['ds_content'][0][0]['#path']['options']);
-    unset($layout_render_array['ds_content'][0][0]['#path']['path']);
+    // unset($layout_render_array['ds_content'][0][0]['#path']['options']);
+    // unset($layout_render_array['ds_content'][0][0]['#path']['path']);
     if (!empty($context['entity']->field_link_to)) {
       $url = $context['entity']->field_link_to['und'][0]['url'];
       $layout_render_array['ds_content'][0][0]['#path']['path'] = $url;
@@ -373,4 +373,3 @@ function dfata_theme_preprocess_file_entity(&$variables) {
     $variables['no_title'] = true;
   }
 }
-

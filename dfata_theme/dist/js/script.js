@@ -5,17 +5,27 @@
  */
 (function($, Drupal, window, document, undefined) {
 
-  $(document).ready(function() {
-    $(".front .panels-flexible-region-4-landing_page_tiles-inside").attr("role", "list");
-    $(".front .panels-flexible-region-4-landing_page_tiles-inside > div.panel-pane").each(function() {
-      $(this).attr("role", "listitem");
-    });
+  Drupal.behaviors.dfata_accessibilityFixes = {
+    attach: function(context, settings) {
 
-    $(".page-news .view-latest-news").attr("role", "list");
-    $(".page-news .view-latest-news .views-row").each(function() {
-      $(this).attr("role", "listitem");
-    });
-  });
+      $(".front .panels-flexible-region-4-landing_page_tiles-inside").attr("role", "list");
+      $(".front .panels-flexible-region-4-landing_page_tiles-inside > div.panel-pane").each(function() {
+        $(this).attr("role", "listitem");
+      });
+
+      // Make news block into list items
+      $(".page-news .view-latest-news").attr("role", "list");
+      $(".page-news .view-latest-news .views-row").each(function() {
+        $(this).attr("role", "listitem");
+      });
+
+      // replace double quotation mark alt text with empty alt text
+      $('img[alt=""""]').attr("alt", " ");
+
+      // remove tabindex from images to avoid duplicate links
+      $('.front .field-name-field-bean-image a').attr("tabindex", "-1");
+    }
+  };
 
 })(jQuery, Drupal, this, this.document);
 
@@ -154,6 +164,41 @@ var desktop_column = 1170;
     attach: function(context, settings) {
       // Object Fit Polyfill for IE. Used on News Teaser Images.
       objectFitImages();
+    }
+  };
+
+  // Slick carousel
+  Drupal.behaviors.slickCarousel = {
+    attach: function(context, settings) {
+      $('.view-slideshow .view-content').slick({
+        autoplay: true,
+        autoplaySpeed: 5000,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        focusOnSelect: true,
+        pauseOnFocus: true,
+        pauseOnHover: true,
+        pauseOnDotsHover: true,
+        cssEase: 'linear',
+        dots: true,
+        arrows: true,
+        accessibility: true
+      });
+    }
+  };
+
+  // Grab the Carousel Titles and place them into pagination inside a wrapper div
+  Drupal.behaviors.grabTitles = {
+    attach: function(context, settings) {
+      var titles = [];
+      $('.news-information h3').each(function(index) {
+        titles[index] = $(this).text();
+      });
+
+      $('.slick-dots li').each(function(index) {
+        $(this).html('<button class="carousel-desk-title" type="button" data-role="none" role="button" tabindex="0">' + titles[index] + '</button>');
+      });
     }
   };
 
@@ -325,84 +370,6 @@ var desktop_column = 1170;
         $(window).unbind('resize', side_menu_responsive).bind('resize', side_menu_responsive);
         side_menu_responsive();
       }
-    }
-  };
-
-})(jQuery, Drupal, this, this.document);
-
-
-/**
- * Home page slider.
- * An implementation of the Owl Carousel with custom controls.
- */
-(function($, Drupal, window, document, undefined) {
-
-  function isDesktop() {
-    if ($('.mobile-expand-menu').is(':visible')) {
-      return false;
-    }
-    else {
-      return true;
-    }
-  }
-
-  Drupal.behaviors.front_page_news_carousel = {
-    attach: function(context, settings) {
-
-      // Init Owl Carousel
-      var owl = $(".view-latest-news.view-display-id-block_1 .view-content");
-      owl.owlCarousel({
-        singleItem: true,
-        autoPlay: 5000,
-        transitionStyle: 'fade',
-        addClassActive: true,
-        mouseDrag: false,
-        items: 1,
-        autoHeight: true,
-        afterUpdate: function() {
-          grabTitles();
-        }
-      });
-
-      // Pause on Item Click
-      $('.owl-controls').find('.owl-pagination').click(function() {
-        owl.trigger('owl.stop');
-        $(".owl-pause").hide();
-        $(".owl-play").show();
-      });
-
-      // Create Pause and play Buttons
-      $('.news-information').append(
-        '<span class="owl-pause"></span><span style="display:none;" class="owl-play"></span>');
-
-      // Functions to handle pause/play behaviour
-      $(".owl-pause").click(function() {
-        owl.trigger('owl.stop');
-        $('.owl-pause').hide();
-        $(".owl-play").show();
-      });
-
-      $(".owl-play").click(function() {
-        owl.trigger('owl.play', 5000);
-        $('.owl-play').hide();
-        $(".owl-pause").show();
-      });
-
-      function grabTitles() {
-        if (isDesktop()) {
-          // Grab the Carousel Titles and place them into pagination inside a wrapper div
-          var titles = [];
-          $('.news-information h3').each(function(index) {
-            titles[index] = $(this).text();
-          });
-
-          $('.owl-page').each(function(index) {
-            $(this).html('<div class="carousel-desk-title">' + titles[index] + '</div>');
-          });
-        }
-      }
-
-      grabTitles();
     }
   };
 

@@ -98,37 +98,37 @@
 }
 
 body.not-front #content {
-.content-header-inner.has-image {
-  background-color: rgba($grey-darkest, .5);
-  height: rem(180px);
-  @include breakpoint(tablet) {
-    height: rem(300px);
-  }
-  .page__title {
-    color: white;
-  }
-  .title_image {
-    position: absolute;
-    right: 0;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    z-index: -1;
-    overflow: hidden;
-
-    &:after {
-      content: ' ';
+  .content-header-inner.has-image {
+    background-color: rgba($grey-darkest, .5);
+    height: rem(180px);
+    @include breakpoint(tablet) {
+      height: rem(300px);
+    }
+    .page__title {
+      color: white;
+    }
+    .title_image {
       position: absolute;
       right: 0;
       left: 0;
       top: 0;
       bottom: 0;
-      background: linear-gradient(to bottom, rgba(0,0,0,0.6), transparent);
+      z-index: -1;
+      overflow: hidden;
+
+      &:after {
+        content: ' ';
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        background: linear-gradient(to bottom, rgba(0,0,0,0.6), transparent);
+      }
     }
   }
 }
-}
-
+body.page-news #content,
 body.page-contact #content {
   .content-header-inner.has-image .page__title_image {
     &:before {
@@ -146,6 +146,12 @@ body.page-contact #content {
       opacity: 0;
     }
   }
+}
+
+body.page-news #content .content-header-inner.has-image .page__title_image:before {
+  content: ' ';
+  background: url("../images/Faculties.jpg") no-repeat;
+  background-size: cover;
 }
 
 .page-node.node-type-news-article .node-news-article {
