@@ -4,6 +4,7 @@ description = The Diplomatic Academy Kit theme based on govCMS UI Kit.
 core        = 7.x
 
 stylesheets[all][] = dist/css/styles.css
+stylesheets[all][] = vendor/slick/slick.css
 
 scripts[] = vendor/object-fit-images/ofi.browser.js
 scripts[] = dist/js/script.js
